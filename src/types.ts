@@ -1,0 +1,1 @@
+export type Column={id:string;name:string;type:string;primaryKey?:boolean;notNull?:boolean;unique?:boolean;defaultValue?:string;references?:{table:string;column:string}};export type DbIndex={id:string;name:string;columns:string[];unique?:boolean};export type Table={id:string;name:string;columns:Column[];indexes:DbIndex[]};export type Dialect='postgresql'|'sqlite'|'mysql';
